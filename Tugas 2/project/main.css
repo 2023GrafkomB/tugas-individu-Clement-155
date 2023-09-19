@@ -1,9 +1,17 @@
 body {
     margin: 0;
   }
-  canvas {
-    width: 100vw;
-    height: 100vh;
-    display: block;
-  }
+canvas {
+  position: absolute;
   
+  width: 100vw;
+  height: 100vh;
+  display: block;
+}
+h3 {
+  z-index: 1;
+  font-family: 'Courier New', Courier, monospace;
+  position: absolute;
+  background-color: aliceblue;
+  color:black;
+}
