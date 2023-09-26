@@ -1,0 +1,17 @@
+newmtl Reykjanesviti_Model_Decimated_v6:Reykjanesviti_Model_Decimated_v6_1001
+Ns 0.00
+Kd 1.00 1.00 1.00
+Ka 1.00 1.00 1.00
+Ke 0.10 0.10 0.10
+Ks 0.00 0.00 0.00
+map_Kd Reykjanesviti_diffuse.jpg
+map_Bump Reykjanesviti_NM.jpg
+
+newmtl Reykjanesviti_Model_Decimated_v6:aiFlat1SG
+Ns 0.00
+Kd 1.00 1.00 1.00
+Ka 1.00 1.00 1.00
+Ks 0.00 0.00 0.00
+map_Kd Ground_Tiled.jpg
+map_Bump Ground_Tiled_NM.jpg
+
