@@ -601,8 +601,8 @@ async function main() {
     // Upload the canvas to the cubemap face.
     const level = 0;
     const internalFormat = gl.RGBA;
-    const width = 512;
-    const height = 512;
+    const width = 540;
+    const height = 540;
     const format = gl.RGBA;
     const type = gl.UNSIGNED_BYTE;
 
@@ -641,6 +641,7 @@ async function main() {
 
   const textures = {
     defaultWhite: create1PixelTexture(gl, [255, 255, 255, 255]),
+    defaultDark: create1PixelTexture(gl, [0, 0, 0, 0]),
     defaultNormal: create1PixelTexture(gl, [127, 127, 255, 0]),
   };
 
@@ -672,7 +673,7 @@ async function main() {
     normalMap: textures.defaultNormal,
     ambient: [0, 0, 0],
     specular: [0, 0, 0],
-    specularMap: textures.defaultWhite, //CCW : Prevent automatic reflective surface
+    specularMap: textures.defaultDark, //CCW : Prevent automatic reflective surface
     shininess: 400,
     opacity: 1,
   };
@@ -822,7 +823,7 @@ async function main() {
 
 
     const sharedUniforms = {
-      u_lightDirection: m4.normalize(lightDirection),
+      u_lightDirection: [0, 10, 0],
       u_view: view,
       u_projection: projectionMatrix,
       u_viewWorldPosition: cameraPosition,
