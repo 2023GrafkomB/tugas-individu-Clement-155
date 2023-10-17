@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Three.js Tutorials by Sean Bradley : https://sbcode.net/threejs/</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <style>
+            body {
+                overflow: hidden;
+                margin: 0px;
+            }
+        </style>
+
+        <!-- Import maps polyfill -->
+        <!-- Remove this when import maps will be widely supported -->
+        
+        <script type="importmap">
+            {
+              "imports": {
+                "three": "https://unpkg.com/three@v0.157.0/build/three.module.js",
+                "three/addons/": "https://unpkg.com/three@v0.157.0/examples/jsm/"
+              }
+            }
+          </script>
+    </head>
+
+    <body>
+        <script type="module" src="client.js"></script>
+    </body>
+</html>
